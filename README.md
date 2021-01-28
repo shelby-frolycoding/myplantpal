@@ -22,7 +22,8 @@
 
 ## Overview
 
-_**MyPlantPal** >>Ever had a treasured plant die because you forgot to water it (or watered it waaay to much) ? Fear not, myplantpal has got your back. With this customizeable and orderly app , you, my dear user, can name your green friend, set when you need to water and nourish them, get notified of the next watering,  and even update #plantprogress pics along the way. Your rooted companions will thank you!<<
+_**MyPlantPal** 
+Ever had a treasured plant die because you forgot to water it (or watered it waaay to much) ? Fear not, myplantpal has got your back. With this customizeable and orderly app , you, my dear user, can name your green friend, set when you need to water and nourish them, get notified of the next watering,  and even update #plantprogress pics along the way. Your rooted companions will thank you!
 
 Plant pal will allow users: 
 -to have an account (sign in and sign out)
@@ -131,7 +132,7 @@ https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
 
 #### ERD Model
 
-![erd](https://drive.google.com/file/d/10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb/view?usp=sharing)
+![erd](https://live.staticflickr.com/65535/50884078283_5d82b5cd81_n.jpg)
 
 <br>
 
