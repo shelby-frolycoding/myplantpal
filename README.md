@@ -120,9 +120,15 @@ https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Begin Backend setup |    H     |     8 hrs      |     8 hrs     |     TBD     |
+| Start Auth          |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Delpoy/Debug Backend|    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Frontend Setup      |    H     |     8 hrs      |     8 hrs     |     TBD     |
+| Begin Styling       |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Start Function of FE|    H     |     6 hrs      |     6 hrs     |     TBD     |
+| Test/Link/Route etc |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Finish Styling      |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |    -     |     TBD        |    TBD        |     TBD     |
 
 
 
@@ -140,7 +146,10 @@ https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
 
 ## Post-MVP
 
-
+- perhaps an actual alarm or notification system
+- it would be cool to do somethign with sunlight and plants
+- maybe even a growth tracker
+- above all, I would love to put extra effort into my styling and use more advance css 
 
 ***
 
