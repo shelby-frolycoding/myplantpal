@@ -22,7 +22,7 @@
 
 ## Overview
 
-_**MyPlantPal** 
+**MyPlantPal** 
 Ever had a treasured plant die because you forgot to water it (or watered it waaay to much) ? Fear not, myplantpal has got your back. With this customizeable and orderly app , you, my dear user, can name your green friend, set when you need to water and nourish them, get notified of the next watering,  and even update #plantprogress pics along the way. Your rooted companions will thank you!
 
 Plant pal will allow users: 
@@ -38,7 +38,7 @@ Plant pal will allow users:
 ## MVP
 
 
-_The **MyPlantPal MVP** 
+The **MyPlantPal MVP** 
 
 ### Goals
 -to have an account (sign in and sign out)
