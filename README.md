@@ -47,13 +47,15 @@ _The **MyPlantPal MVP**
 -allow users to add  a custom name and pic for plant
 -fully designed and mobile friendly app
 
+One of my biggest goals/challenges will be the watering/nourishing notification/count down system to alert user that it's close/is time to care for the plants
+
 
 <br>
 
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -62,7 +64,8 @@ _The **MyPlantPal MVP**
 | React SemanticUI | ? 
 |     Express      | works with react on frontend
 |  Express Router  | 
-|    
+|    FontAwesome   |  great icons for design!
+
 
 <br>
 
@@ -85,7 +88,7 @@ _The **MyPlantPal MVP**
 
 #### Component Tree
 
-![whim](https://whimsical.com/5umUtxenRN1c9bzzG5GUwA)
+![whim](https://live.staticflickr.com/65535/50884686991_73a216734c.jpg)
 
 #### Component Hierarchy
 
@@ -128,7 +131,7 @@ https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
 
 #### ERD Model
 
-https://app.diagrams.net/#G10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb
+![erd](https://app.diagrams.net#G10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb)
 
 <br>
 
@@ -136,14 +139,13 @@ https://app.diagrams.net/#G10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
