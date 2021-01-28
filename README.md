@@ -100,10 +100,8 @@ One of my biggest goals/challenges will be the watering/nourishing notification/
 ├── package-lock.json
 ├── package.json
 ├── public
-│   ├── favicon.ico
+│   ├── images
 │   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
 │   ├── manifest.json
 │   └── robots.txt
 └── src
@@ -117,8 +115,10 @@ One of my biggest goals/challenges will be the watering/nourishing notification/
     │   ├── Notification
     │   │   ├── (no css i think)
     │   │   └── Notification.jsx
-    │   ├── 
-    │   │   
+    │   ├── Logo
+    │   │  ├── Logo.css
+    │   │  └── Logo.jsx
+    │   │  
     │   └── shared // This folder is for components that will appear across all screens.
     │       ├── Footer
     │       │   ├── Footer.css
