@@ -96,15 +96,61 @@ One of my biggest goals/challenges will be the watering/nourishing notification/
 
 ``` structure
 
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.jsx 
+    ├── App.test.js
+    ├── components 
+    │   ├── Plant 
+    │   │   ├── Plant.css
+    │   │   └── Plant.jsx
+    │   ├── Notification
+    │   │   ├── (no css i think)
+    │   │   └── Notification.jsx
+    │   ├── 
+    │   │   
+    │   └── shared // This folder is for components that will appear across all screens.
+    │       ├── Footer
+    │       │   ├── Footer.css
+    │       │   └── Footer.jsx
+    │       ├── Layout
+    │       │   ├── Layout.css
+    │       │   └── Layout.jsx
+    │       └── Nav
+    │           ├── Nav.css
+    │           └── Nav.jsx
+    ├── index.css
+    ├── index.js
+    ├── screens 
+    │   ├── Home
+    │   │   ├── Home.css
+    │   │   └── Home.jsx
+    │   └── PlantCreate
+    │   │   ├── ProductCreate.css
+    │   │   └── ProductCreate.jsx
+    │   └── PlantDetail
+    │   │   ├── ProductDetail.css
+    │   │   └── ProductDetail.jsx
+    │   └── PlantEdit
+    │   │   ├── ProductEdit.css
+    │   │   └── ProductEdit.jsx
+    │   └── Products
+    │       ├── Plants.css
+    │       └── Plants.jsx
+    ├── services // This folder is for API calls.
+    │   └── plants.js
+    └── utils // This folder is for helper functions, 
+        └── notification.js
 
 ```
 
