@@ -70,9 +70,10 @@ _The **MyPlantPal MVP**
 
 #### Wireframes
 
-![main frame](https://www.canva.com/design/DAET051BBWM/JSlfAx7QdjkZWr9sAx7fhg/view?utm_content=DAET051BBWM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+![main frame]()
 
 ## Mobile
+![mobile frame](https://live.staticflickr.com/65535/50884689667_668d6892f5.jpg)
 ![mobile frame](https://live.staticflickr.com/65535/50884689632_8e66a27973.jpg)
 
 #### Component Tree
