@@ -70,7 +70,14 @@ _The **MyPlantPal MVP**
 
 #### Wireframes
 
-![main frame](https://www.canva.com/design/DAET051BBWM/view)
+![main frame](https://live.staticflickr.com/65535/50884754047_77c23629ea.jpg)
+![main frame](https://live.staticflickr.com/65535/50883930768_8926e13b06.jpg)
+![main frame](https://live.staticflickr.com/65535/50884754012_d03072b0f2.jpg)
+![main frame](https://live.staticflickr.com/65535/50883930743_7ebb174af0.jpg)
+![main frame](https://live.staticflickr.com/65535/50884650576_77175144c1.jpg)
+![main frame](https://live.staticflickr.com/65535/50883930633_2e11e9b2bb.jpg)
+![main frame](https://live.staticflickr.com/65535/50883930603_bbd0a521c3.jpg)
+![main frame](https://live.staticflickr.com/65535/50884650461_56d424ee45.jpg)
 
 ## Mobile
 ![mobile frame](https://live.staticflickr.com/65535/50884689667_668d6892f5.jpg)
