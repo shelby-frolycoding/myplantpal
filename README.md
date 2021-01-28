@@ -131,7 +131,7 @@ https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
 
 #### ERD Model
 
-![erd](https://app.diagrams.net#G10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb)
+![erd](https://drive.google.com/file/d/10_3UUPjXO0Y8dV6HL6tR3pzR2G5ZWkSb/view?usp=sharing)
 
 <br>
 
