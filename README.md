@@ -70,7 +70,7 @@ _The **MyPlantPal MVP**
 
 #### Wireframes
 
-![main frame](file:///Users/shelbysexton/Downloads/My%20plant.pdf)
+![main frame](https://www.canva.com/design/DAET051BBWM/view)
 
 ## Mobile
 ![mobile frame](https://live.staticflickr.com/65535/50884689667_668d6892f5.jpg)
