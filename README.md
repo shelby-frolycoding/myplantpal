@@ -70,13 +70,14 @@ _The **MyPlantPal MVP**
 
 #### Wireframes
 
+![main frame](https://www.canva.com/design/DAET051BBWM/JSlfAx7QdjkZWr9sAx7fhg/view?utm_content=DAET051BBWM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Mobile
-![mobile frame](https://www.canva.com/design/DAEUhunDNao/_Ki819Dx7Je22b_OnF3YLQ/view?utm_content=DAEUhunDNao&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+![mobile frame](/Users/shelbysexton/general_assembly/Garnet/Project4/myplantpal/1.png)
 
 #### Component Tree
 
-https://whimsical.com/5umUtxenRN1c9bzzG5GUwA
+![alt text](https://whimsical.com/5umUtxenRN1c9bzzG5GUwA)
 
 #### Component Hierarchy
 
