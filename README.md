@@ -73,7 +73,7 @@ _The **MyPlantPal MVP**
 ![main frame](https://www.canva.com/design/DAET051BBWM/JSlfAx7QdjkZWr9sAx7fhg/view?utm_content=DAET051BBWM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Mobile
-![mobile frame](/Users/shelbysexton/general_assembly/Garnet/Project4/myplantpal/1.png)
+![mobile frame](https://live.staticflickr.com/65535/50884689632_8e66a27973.jpg)
 
 #### Component Tree
 
