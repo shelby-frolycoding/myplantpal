@@ -136,14 +136,14 @@ One of my biggest goals/challenges will be the watering/nourishing notification/
     │   │   ├── Home.css
     │   │   └── Home.jsx
     │   └── PlantCreate
-    │   │   ├── ProductCreate.css
-    │   │   └── ProductCreate.jsx
+    │   │   ├── PlantCreate.css
+    │   │   └── PlantCreate.jsx
     │   └── PlantDetail
-    │   │   ├── ProductDetail.css
-    │   │   └── ProductDetail.jsx
+    │   │   ├── PlantDetail.css
+    │   │   └── PlantDetail.jsx
     │   └── PlantEdit
-    │   │   ├── ProductEdit.css
-    │   │   └── ProductEdit.jsx
+    │   │   ├── PlantEdit.css
+    │   │   └── PlantEdit.jsx
     │   └── Products
     │       ├── Plants.css
     │       └── Plants.jsx
