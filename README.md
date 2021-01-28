@@ -70,7 +70,7 @@ _The **MyPlantPal MVP**
 
 #### Wireframes
 
-![main frame]()
+![main frame](file:///Users/shelbysexton/Downloads/My%20plant.pdf)
 
 ## Mobile
 ![mobile frame](https://live.staticflickr.com/65535/50884689667_668d6892f5.jpg)
@@ -78,7 +78,7 @@ _The **MyPlantPal MVP**
 
 #### Component Tree
 
-![alt text](https://whimsical.com/5umUtxenRN1c9bzzG5GUwA)
+![whim](https://whimsical.com/5umUtxenRN1c9bzzG5GUwA)
 
 #### Component Hierarchy
 
