@@ -3,9 +3,9 @@ class CreatePlants < ActiveRecord::Migration[6.1]
     create_table :plants do |t|
       t.string :name
       t.references :user, null: false, foreign_key: true
-      t.datetime :welcome_date
-      t.datetime :last_watered
-      t.datetime :last_fertilized
+      t.date :welcome_date
+      t.date :last_watered
+      t.date :last_fertilized
       t.integer :water_frquencey
       t.integer :feed_frequency
 
