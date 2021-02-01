@@ -1,0 +1,57 @@
+.all-nav {
+  color: black;
+  background-color: #a5cbb5;
+  height: 8vw;
+  border: solid  #a5cbb5;
+}
+A:link {
+  text-decoration: none;
+  
+}
+.logo {
+float: left;
+}
+
+.nav-icons {
+font-size: 3vw;
+display: flex;
+margin-top: 4.5vw;
+justify-content: space-between;
+width: 20vw;
+margin-left: 70vw;
+color: #737373;
+
+}
+
+.link-icon {
+  text-decoration: none;
+  color: #737373;
+}
+.nav-icon:hover {
+transform: scale(1.05);
+}
+
+
+
+.user-menu {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  justify-self: flex-start;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  font-family: "Josefin Slab", serif;
+  z-index: 100;
+  background-color: rgba(232, 232, 232, 0.927);
+}
+
+
+
+.welcome-msg {
+  position: absolute;
+  left: 15vw;
+  font-family: "Staatliches", cursive;
+  color: rgb(227, 227, 227);
+}
