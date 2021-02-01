@@ -59,12 +59,13 @@ export default function Nav(props) {
         <FontAwesomeIcon icon={faSeedling} />
           </Link>
         </div>
-        <Link className="link-icon" to="/login">
-        <div className="nav-icon">
-            <FontAwesomeIcon className="nav-icon"  icon={faUser}/>
-            </div>
-            </Link>
         
+        <div className="nav-icon">
+        <Link className="link-icon" to='/login'>
+        <FontAwesomeIcon icon={faUser} />
+          </Link>
+        </div>
+
         {/* <div className="nav-icon">
           <FontAwesomeIcon className= "nav-icon"
             icon={faUser}
