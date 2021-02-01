@@ -8,17 +8,17 @@ export default function Plants(props) {
       <h3>my plants</h3>
       {plants.map(plant => (
         <React.Fragment key={plant.id}>
-          <Link to={`/foods/${plant.id}`}><p>{food.name}</p></Link>
-          {currentUser?.id === food.user_id && (
+          <Link to={`/plants/${plant.id}`}><p>{plant.name}</p></Link>
+          {currentUser?.id === plant.user_id && (
             <>
-              <Link to={`/foods/${food.id}/edit`}><button>Edit</button></Link>
-              <button onClick={() => handleDelete(food.id)}>Delete</button>
+              <Link to={`/plants/${plant.id}/edit`}><button>Edit</button></Link>
+              <button onClick={() => handleDelete(plant.id)}>Delete</button>
             </>
           )}
         </React.Fragment>
       ))}
       <br />
-      <Link to='/foods/new'><button>Create</button></Link>
+      <Link to='/plants/new'><button>Create</button></Link>
     </div>
   )
 }
