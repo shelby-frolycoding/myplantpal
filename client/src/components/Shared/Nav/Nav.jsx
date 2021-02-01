@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
+import { CSSTransition } from "react-transition-group"
 import "./Nav.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faUser,
-//   faHome,
-//   faSeedling
-// } from "@fortawesome/free-solid-svg-icons";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faHome,
+  faSeedling
+} from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
 export default function Nav(props) {
@@ -18,7 +18,7 @@ export default function Nav(props) {
 
   const authUserLinks = (
     <>
-      <Link className="user-link" to="/add-product">
+      <Link className="user-link" to="/add-plant">
         Add Plant
       </Link>
       <Link className="user-link" to="/log-out">
@@ -37,6 +37,7 @@ export default function Nav(props) {
     </>
   );
   return (
+  
     <div className="all-nav">
       <div className="logo-nav">
         <Link className="home-link" to="/">
@@ -47,32 +48,37 @@ export default function Nav(props) {
       <div className="nav-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
      
-        <div className="home-icon">
-        <Link className="home-icon-link" to="/">
-            {/* <FontAwesomeIcon icon={faHome} name="home" /> */}
+        <div className="nav-icon">
+        <Link className="link-icon" to="/">
+            <FontAwesomeIcon icon={faHome} name="home" />
             </Link>
           </div>
           
-       
-          <div className="plant-icon">
-        <Link className="plant-icon" to="/my-plants">
-        {/* <FontAwesomeIcon icon={faSeedling} /> */}
-        </Link>
-        </div>
-
-           <div className="user-icon">
-          {/* <FontAwesomeIcon
+          <div className="nav-icon">
+        <Link className="link-icon" to="/my-plants">
+        <FontAwesomeIcon icon={faSeedling} />
+          </Link>
+          </div>
+        <div className="nav-icon">
+          <FontAwesomeIcon className= "nav-icon"
             icon={faUser}
             name="userMenuToggle"
             onClick={() => setUserMenuToggle((prev) => !prev)}
-          /> */}
+          />
         </div>
-        
+        <CSSTransition
+          timeout={300}
+          in={userMenuToggle}
+          unmountOnExit
+          classNames="user-menu"
+        >
           <div className="user-menu">
             {user ? authUserLinks : unAuthUserLinks}
           </div>
-       
+        </CSSTransition>
+      
+        </div>
       </div>
-    </div>
+   
   );
 }

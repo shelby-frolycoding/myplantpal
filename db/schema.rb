@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_29_214554) do
+ActiveRecord::Schema.define(version: 2021_01_30_053939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "plant_types", force: :cascade do |t|
+    t.string "type"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "plants", force: :cascade do |t|
     t.string "name"
@@ -26,6 +32,11 @@ ActiveRecord::Schema.define(version: 2021_01_29_214554) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_plants_on_user_id"
+  end
+
+  create_table "plants_types", id: false, force: :cascade do |t|
+    t.bigint "plant_id", null: false
+    t.bigint "type_id", null: false
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,19 +1,21 @@
 class PlantsController < ApplicationController
-  before_action :set_plant, only: [:show, :update, :destroy]
+  before_action :set_plant, only: :show
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
-  # GET /plants
+
+ 
   def index
     @plants = Plant.all
 
     render json: @plants
   end
 
-  # GET /plants/1
+  
   def show
-    render json: @plant
+    render json: @plant, include: :plant_types
   end
 
-  # POST /plants
+ 
   def create
     @plant = Plant.new(plant_params)
 
@@ -24,7 +26,7 @@ class PlantsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /plants/1
+  
   def update
     if @plant.update(plant_params)
       render json: @plant
@@ -33,18 +35,20 @@ class PlantsController < ApplicationController
     end
   end
 
-  # DELETE /plants/1
+ 
   def destroy
+    @plant = @current_user.plants.find(params[:id])
+   
     @plant.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
     def set_plant
       @plant = Plant.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+   
     def plant_params
       params.require(:plant).permit(:name, :user_id, :welcome_date, :last_watered, :last_fertilized, :water_frquencey, :feed_frequency)
     end
