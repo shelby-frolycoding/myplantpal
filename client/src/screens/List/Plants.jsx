@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Plants.css";
 
 export default function Plants(props) {
   const { plants, handleDelete, currentUser } = props;
   return (
-    <div>
+    <div className ="all-plants">
       <h3>my plants</h3>
       {plants.map(plant => (
         <React.Fragment key={plant.id}>

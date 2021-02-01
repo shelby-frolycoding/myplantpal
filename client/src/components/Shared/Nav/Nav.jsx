@@ -55,7 +55,7 @@ export default function Nav(props) {
           </div>
           
           <div className="nav-icon">
-        <Link className="link-icon" to="/my-plants">
+        <Link className="link-icon" to="/plants">
         <FontAwesomeIcon icon={faSeedling} />
           </Link>
         </div>
