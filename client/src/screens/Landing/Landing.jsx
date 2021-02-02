@@ -8,7 +8,7 @@ export default function Landing(props) {
     
       
       <div className="landing">
-      this is my home screen 
+      
       </div>
 
    
