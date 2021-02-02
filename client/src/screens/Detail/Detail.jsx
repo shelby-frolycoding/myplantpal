@@ -31,6 +31,8 @@ export default function Detail(props) {
   return (
     <div>
       <h3>{plantItem?.name}</h3>
+      <h3>{plantItem?.last_watered}</h3>
+      <h3>{plantItem?.lastWatered}</h3>
       {/* {plantItem?.plantType.map(plantType => (
         <p key={plantType.id}>{plantType.name}</p>
       ))} */}

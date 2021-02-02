@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 export default function EditPlant(props) {
   const [formData, setFormData] = useState({
     name: '',
-    welcomeDate: '',
+    welcomeDate: '', 
     lastWatered: '',
     waterFreq: ''
   })
@@ -33,7 +33,10 @@ export default function EditPlant(props) {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: value,
+      [welcomeDate]: value,
+      [lastWatered]: value,
+      [waterFreq]: value,
     }))
   }
 
@@ -66,14 +69,14 @@ export default function EditPlant(props) {
           value={lastWatered}
           onChange={handleChange}
         />
-        <label>Water Frequency:
+         <label>Water Frequency:
         <input
-            type='text'
-            name='water_frquencey'
-            value={waterFreq}
-            onChange={handleChange}
-          />
-        </label>
+          type='text'
+          name='water_frquencey'
+          value={waterFreq}
+          onChange={handleChange}
+        />
+      </label>
       </label>
       <button>Submit</button>
     </form>
