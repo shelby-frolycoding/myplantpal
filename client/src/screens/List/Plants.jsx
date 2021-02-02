@@ -14,7 +14,7 @@ export default function Plants(props) {
           {user?.id === plant.user_id && (
             <>
               <Link to={`/plants/${plant.id}/edit`}><button>Edit</button></Link>
-              {/* <button onClick={() => handleDelete(plant.id)}>Delete</button> */}
+              <button onClick={() => handleDelete(plant.id)}>Delete</button>
             </>
           )}
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Switch, useHistory} from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Landing from "./screens/Landing/Landing";
 import Layout from "./components/Shared/Layout/Layout"
 import Login from "./screens/SignIn/Login";
@@ -8,8 +8,8 @@ import Plants from "./screens/List/Plants"
 import Detail from "./screens/Detail/Detail"
 import PlantEdit from "./screens/PlantEdit/PlantEdit"
 import PlantCreate from "./screens/PlantCreate/PlantCreate"
-import { getAllPlants } from "./services/plants"
-import { deletePlant, getAllPlants, postPlant, putPlant } from '../services/foods';
+// import { getAllPlants } from "./services/plants"
+import { deletePlant, getAllPlants, postPlant, putPlant } from './services/plants';
 import { loginUser, registerUser, verifyUser, removeToken } from "./services/auth";
 import "./App.css"
 
@@ -60,47 +60,47 @@ function App() {
   const handleUpdate = async (id, plantData) => {
     const updatedPlant = await putPlant(id, plantData);
     setPlants(prevState => prevState.map(plantItem => {
-      return plantItem.id === Number(id) ? updatedPlant : PlantItem
+      return plantItem.id === Number(id) ? updatedPlant : plantItem
     }))
     history.push('/plants')
   }
 
   useEffect(() => {
     const getPlants = async () => {
-    const plantdata = await getAllPlants()
+      const plantdata = await getAllPlants()
       setPlants(plantdata)
     }
     getPlants()
-    
+
   }, []);
 
   return (
     <Layout user={currentUser} handleLogout={handleLogout}>
       <Switch>
-        
-    <Route path='/plants'>
-    <Plants user={currentUser} plants={plants} handleDelete={handleDelete} />
-    </Route>
-    <Route path='/login'>
-    <Login handleLogin={handleLogin}/>
-    </Route>
-    <Route path='/register'>
-    <Register handleRegister={handleRegister}/>
-    </Route>
-    <Route>
-    <Landing path='/' />
-    </Route>
-    <Route path='/plants/:id'>
-    <Detail plantTypes={plantTypes} />
-    </Route>
-    <Route path='/plants/:id/edit'>
-    <PlantEdit plants={plants} handleUpdate={handleUpdate}/>
-    </Route>
-    <Route path='/foods/new'>
-    <PlantCreate handleCreate={handleCreate} />
-    </Route>
-        
-    </Switch>
+
+        <Route path='/plants'>
+          <Plants user={currentUser} plants={plants} handleDelete={handleDelete} />
+        </Route>
+        <Route path='/login'>
+          <Login handleLogin={handleLogin} />
+        </Route>
+        <Route path='/register'>
+          <Register handleRegister={handleRegister} />
+        </Route>
+        <Route>
+          <Landing path='/' />
+        </Route>
+        <Route path='/plants/:id'>
+          <Detail plants={plants} />
+        </Route>
+        <Route path='/plants/:id/edit'>
+          <PlantEdit plants={plants} handleUpdate={handleUpdate} />
+        </Route>
+        <Route path='/foods/new'>
+          <PlantCreate handleCreate={handleCreate} />
+        </Route>
+
+      </Switch>
     </Layout>
   );
 }
