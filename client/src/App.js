@@ -51,18 +51,18 @@ function App() {
   }
 
   const handleDelete = async (id) => {
-    await deleteFood(id);
-    setFoods(prevState => prevState.filter(foodItem => {
-      return foodItem.id !== id
+    await deletePlant(id);
+    setPlants(prevState => prevState.filter(plantItem => {
+      return plantItem.id !== id
     }))
   }
 
-  const handleUpdate = async (id, foodData) => {
-    const updatedFood = await putFood(id, foodData);
-    setFoods(prevState => prevState.map(foodItem => {
-      return foodItem.id === Number(id) ? updatedFood : foodItem
+  const handleUpdate = async (id, plantData) => {
+    const updatedPlant = await putPlant(id, plantData);
+    setPlants(prevState => prevState.map(plantItem => {
+      return plantItem.id === Number(id) ? updatedPlant : PlantItem
     }))
-    history.push('/foods')
+    history.push('/plants')
   }
 
   useEffect(() => {
