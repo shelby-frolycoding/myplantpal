@@ -43,10 +43,13 @@ export default function Login(props) {
             value={password}
             onChange={handleChange}
           />
-        </label>
-        <br />
-        <Link to='/register'>Register</Link>
-          <button>Submit</button>
+          </label>
+          <br />
+          <button className= "log-butt">Submit</button>
+        <div className= "reg">
+        Dont have an account? <Link className="reg-link" to='/register'> register here.</Link>
+           
+            </div>
           </div>
       </form>
      

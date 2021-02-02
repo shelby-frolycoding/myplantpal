@@ -33,22 +33,6 @@ transform: scale(1.05);
 
 
 
-.user-menu {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  text-align: center;
-  justify-self: flex-start;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  font-family: "Josefin Slab", serif;
-  z-index: 100;
-  background-color: rgba(232, 232, 232, 0.927);
-}
-
-
-
 .welcome-msg {
   position: absolute;
   left: 43vw;

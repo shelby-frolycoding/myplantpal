@@ -1,15 +1,45 @@
 .log-cont {
 background-color: #54a5a6af;
-width: 30vw;
-height: 20vw;
+width: 40vw;
+height: 30vw;
 text-align: center;
 display: flex;
 justify-self: flex-start;
 justify-content: center;
-margin-top: 10vw;
-border: solid  blue;
+margin-top: 5vw;
+margin-left: 32vw;
+font-size: 2.5vw;
+font-family: "Staatliches", cursive;
+color: whitesmoke;
 }
 
 .log-deets {
-  border: solid blueviolet;
+ width: 30vw;
+}
+
+.reg-link {
+text-decoration: none;
+color: rgb(126, 73, 249);
+}
+.reg {
+  margin-top: 7vw;
+  font-size: 1vw;
+}
+
+input {
+background-color: rgba(210, 210, 210, 0.797);
+border: none;
+padding-top: .8vw;
+font-size: 1vw;
+}
+
+.log-butt {
+border: none;
+color: black;
+background-color: rgba(201, 201, 201, 0.892);
+height: 1.5vw;
+width: 5vw;
+border-radius: 10px;
+font-size: .9vw;
+font-family: "Josefin Slab", serif;
 }
