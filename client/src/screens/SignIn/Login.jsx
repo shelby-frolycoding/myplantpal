@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./Login.css"
-// import Layout from "../../components/Shared/Layout/Layout"
+
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -20,38 +20,41 @@ export default function Login(props) {
   }
 
   return (
-   
-    // <Layout>
-      
-      <div className = "log-cont">
-    <form onSubmit={(e)=> {
-      e.preventDefault();
-      handleLogin(formData);
-    }}>
-      <h3>Login</h3>
-      <label>Username:
+    <div className="log-cont">
+    <form onSubmit={(e) => {
+        e.preventDefault();   
+    handleLogin(formData); 
+      }}>
+        <div className="log-deets">
+          <h3>Login</h3>
+        <label>Username:
         <input
-          type='text'
-          name='username'
-          value={username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>Password:
+            type='text'
+            name='username'
+            value={username}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>Password:
         <input
-          type='password'
-          name='password'
-          value={password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <Link to='/register'>Register</Link>
-      <button>Submit</button>
-        </form>
-        </div>
-    // </Layout>
-    
+            type='password'
+            name='password'
+            value={password}
+            onChange={handleChange}
+          />
+          </label>
+          <br />
+          <button className= "log-butt">Submit</button>
+        <div className= "reg">
+        Dont have an account? <Link className="reg-link" to='/register'> register here.</Link>
+           
+            </div>
+          </div>
+      </form>
+     
+    </div>
+
+
   )
 }

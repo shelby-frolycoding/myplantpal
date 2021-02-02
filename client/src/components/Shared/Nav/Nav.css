@@ -33,25 +33,9 @@ transform: scale(1.05);
 
 
 
-.user-menu {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  text-align: center;
-  justify-self: flex-start;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  font-family: "Josefin Slab", serif;
-  z-index: 100;
-  background-color: rgba(232, 232, 232, 0.927);
-}
-
-
-
 .welcome-msg {
   position: absolute;
-  left: 15vw;
+  left: 43vw;
   font-family: "Staatliches", cursive;
-  color: rgb(227, 227, 227);
+  color: rgb(249, 246, 246);
 }

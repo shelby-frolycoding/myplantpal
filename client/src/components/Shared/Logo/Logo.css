@@ -1,5 +1,7 @@
 .main-logo {
   width: 65vw;
-  margin-top: -12vw;
+  height: 10vw;
+  object-fit: cover;
+  margin-top: 2vw;
   margin-left: -10.5vw;
 }

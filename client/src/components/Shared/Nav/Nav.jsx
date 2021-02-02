@@ -55,7 +55,7 @@ export default function Nav(props) {
           </div>
           
           <div className="nav-icon">
-        <Link className="link-icon" to="/my-plants">
+        <Link className="link-icon" to="/plants">
         <FontAwesomeIcon icon={faSeedling} />
           </Link>
         </div>
@@ -66,24 +66,6 @@ export default function Nav(props) {
           </Link>
         </div>
 
-        {/* <div className="nav-icon">
-          <FontAwesomeIcon className= "nav-icon"
-            icon={faUser}
-            name="userMenuToggle"
-            onClick={() => setUserMenuToggle((prev) => !prev)}
-          />
-        </div>
-        <CSSTransition
-          timeout={300}
-          in={userMenuToggle}
-          unmountOnExit
-          classNames="user-menu"
-        >
-          <div className="user-menu">
-            {user ? authUserLinks : unAuthUserLinks}
-          </div>
-        </CSSTransition> */}
-      
         </div>
       </div>
    

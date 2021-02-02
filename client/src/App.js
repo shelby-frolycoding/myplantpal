@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Route, Switch, useHistory } from "react-router-dom";
 import Landing from "./screens/Landing/Landing";
+import Layout from "./components/Shared/Layout/Layout"
 import Login from "./screens/SignIn/Login";
 import Register from "./screens/Register/Register";
+import Plants from "./screens/List/Plants"
 import { loginUser, registerUser, verifyUser, removeToken } from "./services/auth";
 import "./App.css"
 
@@ -37,21 +39,27 @@ function App() {
   }
 
   return (
-    <Landing currentUser={currentUser} handleLogout={handleLogout}>
+    <Layout user={currentUser} handleLogout={handleLogout}>
       <Switch>
+        <Route path='/plants'>
+          <Plants user={currentUser} />
+        </Route>
         <Route path='/login'>
           <Login
             handleLogin={handleLogin}
           />
-        </Route> 
+        </Route>
         <Route path='/register'>
           <Register
             handleRegister={handleRegister}
           />
         </Route>
-     
+     <Route>
+        <Landing path='/' />
+        </Route>
+         
       </Switch>
-    </Landing>
+    </Layout>
   );
 }
 
