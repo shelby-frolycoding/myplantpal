@@ -19,6 +19,7 @@ export default function Register(props) {
   }
 
   return (
+    <div className="log-cont">
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleRegister(formData);
@@ -52,9 +53,9 @@ export default function Register(props) {
         />
       </label>
       <br />
-        <button>Submit</button>
+        <button className= "log-butt">Submit</button>
         </div>
     </form>
-    
+    </div>
   )
 }
