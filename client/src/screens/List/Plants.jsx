@@ -20,18 +20,20 @@ export default function Plants(props) {
         <React.Fragment key={plant.id}>
           <Link className="plant-link" to={`/plants/${plant.id}`}>
             <div className="plant-name">{plant.name}
+              <div className= "l-d">
               <FontAwesomeIcon className="leaf" icon={faSeedling} />
               <FontAwesomeIcon className= "drop" icon={faTint} />
+              </div>
             </div>
           </Link>
           
           {user?.id === plant.user_id && (
             <>
       
-              <Link className="plant-link" to={`/plants/${plant.id}/edit`}> <button className="edit-butt">
+              <Link className="plant-link" to={`/plants/${plant.id}/edit`}> <button className="p-butt">
                   <FontAwesomeIcon icon={faPencilAlt} />
                 </button></Link>
-              <button className= "bye-butt" onClick={() => handleDelete(plant.id)}><FontAwesomeIcon icon={faTrashAlt} /></button>
+              <button className= "p-butt" onClick={() => handleDelete(plant.id)}><FontAwesomeIcon icon={faTrashAlt} /></button>
             </>
           )}
 
