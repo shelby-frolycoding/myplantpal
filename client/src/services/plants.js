@@ -16,7 +16,7 @@ export const deletePlant = async (id) => {
 }
 
 export const putPlant = async (id, PlantData) => {
-  const resp = await api.put(`/plants/${id}`, { plant: plantData });
+  const resp = await api.put(`/plants/${id}`, { plant: PlantData });
   return resp.data;
 }
 
