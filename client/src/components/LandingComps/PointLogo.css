@@ -1,5 +1,7 @@
 .p-logo {
-  width: 30vw;
+  width: 50vw;
   height: auto;
-  margin: 0 auto;
+  object-fit: contain;
+  height: auto;
+  margin-left: 12.7vw;
   }
