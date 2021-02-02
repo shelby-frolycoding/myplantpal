@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Switch, useHistory, Redirect } from "react-router-dom";
+import { Route, Switch, useHistory} from "react-router-dom";
 import Landing from "./screens/Landing/Landing";
 import Layout from "./components/Shared/Layout/Layout"
 import Login from "./screens/SignIn/Login";
@@ -9,9 +9,10 @@ import Detail from "./screens/Detail/Detail"
 import PlantEdit from "./screens/PlantEdit/PlantEdit"
 import PlantCreate from "./screens/PlantCreate/PlantCreate"
 import { getAllPlants } from "./services/plants"
+import { deletePlant, getAllPlants, postPlant, putPlant } from '../services/foods';
 import { loginUser, registerUser, verifyUser, removeToken } from "./services/auth";
 import "./App.css"
-import PlantCreate from "./screens/PlantCreate/PlantCreate";
+
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -42,6 +43,26 @@ function App() {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
     removeToken();
+  }
+  const handleCreate = async (plantData) => {
+    const newPlant = await postPlant(plantData);
+    setPlants(prevState => [...prevState, newPlant])
+    history.push('/plants')
+  }
+
+  const handleDelete = async (id) => {
+    await deleteFood(id);
+    setFoods(prevState => prevState.filter(foodItem => {
+      return foodItem.id !== id
+    }))
+  }
+
+  const handleUpdate = async (id, foodData) => {
+    const updatedFood = await putFood(id, foodData);
+    setFoods(prevState => prevState.map(foodItem => {
+      return foodItem.id === Number(id) ? updatedFood : foodItem
+    }))
+    history.push('/foods')
   }
 
   useEffect(() => {
