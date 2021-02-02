@@ -5,13 +5,12 @@ import "./Landing.css";
 
 export default function Landing(props) {
   return (
-    <Layout user={props.user}>
+    
       
       <div className="landing">
-      
+      this is my home screen 
       </div>
 
    
-    </Layout>
   );
 }
