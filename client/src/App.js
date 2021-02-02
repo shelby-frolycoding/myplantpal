@@ -93,7 +93,7 @@ function App() {
         <Route path='/plants/:id'>
           <Detail plants={plants} />
         </Route>
-        <Route path='/plants/:id/edit'>
+        <Route exact path='/plants/:id/edit'>
           <PlantEdit plants={plants} handleUpdate={handleUpdate} />
         </Route>
         <Route path='/plants/new'>

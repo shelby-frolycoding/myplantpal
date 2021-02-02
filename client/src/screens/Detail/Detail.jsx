@@ -31,9 +31,9 @@ export default function Detail(props) {
   return (
     <div>
       <h3>{plantItem?.name}</h3>
-      {plantItem?.plantType.map(plantType => (
+      {/* {plantItem?.plantType.map(plantType => (
         <p key={plantType.id}>{plantType.name}</p>
-      ))}
+      ))} */}
 
       <form onSubmit={handleSubmit}>
         <select defaultValue='default' onChange={handleChange}>
