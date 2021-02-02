@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { addPlantType } from '../services/flavors';
-import { getOnePlant } from '../services/foods';
+import { addPlantType } from '../../services/plant-types';
+import { getOnePlant } from '../../services/plants';
 
-export default function PlantDetail(props) {
+export default function Detail(props) {
   const [plantItem, setPlantItem] = useState(null);
   const [plantTypeId, setPlantTypeId] = useState('')
   const { id } = useParams();
