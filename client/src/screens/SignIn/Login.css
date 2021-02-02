@@ -43,3 +43,6 @@ border-radius: 10px;
 font-size: .9vw;
 font-family: "Josefin Slab", serif;
 }
+.log-butt:hover {
+  transform: scale(1.05);
+}
