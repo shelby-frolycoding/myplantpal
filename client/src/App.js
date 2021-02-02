@@ -78,7 +78,7 @@ function App() {
     <Layout user={currentUser} handleLogout={handleLogout}>
       <Switch>
 
-        <Route path='/plants'>
+        <Route exact path='/plants'>
           <Plants user={currentUser} plants={plants} handleDelete={handleDelete} />
         </Route>
         <Route path='/login'>
@@ -87,8 +87,8 @@ function App() {
         <Route path='/register'>
           <Register handleRegister={handleRegister} />
         </Route>
-        <Route>
-          <Landing path='/' />
+        <Route exact path='/'>
+          <Landing  />
         </Route>
         <Route path='/plants/:id'>
           <Detail plants={plants} />
@@ -96,7 +96,7 @@ function App() {
         <Route path='/plants/:id/edit'>
           <PlantEdit plants={plants} handleUpdate={handleUpdate} />
         </Route>
-        <Route path='/foods/new'>
+        <Route path='/plants/new'>
           <PlantCreate handleCreate={handleCreate} />
         </Route>
 

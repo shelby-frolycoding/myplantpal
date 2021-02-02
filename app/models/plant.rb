@@ -1,4 +1,4 @@
 class Plant < ApplicationRecord
   belongs_to :user
-  has_and_belongs_to_many :plant_types
+  has_one :plant_types
 end

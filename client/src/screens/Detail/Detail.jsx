@@ -38,9 +38,9 @@ export default function Detail(props) {
       <form onSubmit={handleSubmit}>
         <select defaultValue='default' onChange={handleChange}>
           <option disabled value='default'>-- Select a type --</option>
-          {props.plantType.map(plantType => (
+          {/* {props.plantType.map(plantType => (
             <option value={plantType.id} key={plantType.id}>{plantType.name}</option>
-          ))}
+          ))} */}
         </select>
         <button>add</button>
       </form>
