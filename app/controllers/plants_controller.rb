@@ -12,7 +12,7 @@ class PlantsController < ApplicationController
 
   
   def show
-    render json: @plant
+    render json: @plant, include: :plant_types
   end
 
  
@@ -51,6 +51,6 @@ class PlantsController < ApplicationController
 
    
     def plant_params
-      params.require(:plant).permit(:name, :user_id, :welcome_date, :last_watered, :last_fertilized, :water_frquencey, :feed_frequency)
+      params.require(:plant).permit(:name, :user_id, :welcome_date, :last_watered, :last_fertilized, :water_frquencey, :feed_frequency, :plant_type_id)
     end
 end

@@ -34,19 +34,8 @@ export default function Detail(props) {
       <h3>{plantItem?.last_watered}</h3>
       <h3>{plantItem?.welcome_date}</h3>
       <h3>{plantItem?.water_frquencey}</h3>
-      {/* {plantItem?.plantType.map(plantType => (
-        <p key={plantType.id}>{plantType.name}</p>
-      ))} */}
-
-      <form onSubmit={handleSubmit}>
-        <select defaultValue='default' onChange={handleChange}>
-          <option disabled value='default'>-- Select a type --</option>
-          {/* {props.plantType.map(plantType => (
-            <option value={plantType.id} key={plantType.id}>{plantType.name}</option>
-          ))} */}
-        </select>
-        <button>add</button>
-      </form>
+      <h3>{plantItem?.plant_type_id}</h3>
+     
     </div>
   )
 }

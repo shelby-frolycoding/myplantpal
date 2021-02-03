@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { getAllPlantTypes } from '../../services/plant-types'
 
 export default function EditPlant(props) {
+  const [plantTypes, setPlantTypes] = useState([])
   const [formData, setFormData] = useState({
     name: '',
-    welcome_date: '', 
+    welcome_date: '',
     last_watered: '',
     water_frquencey: ''
   })
@@ -13,12 +15,18 @@ export default function EditPlant(props) {
   const { id } = useParams();
 
   useEffect(() => {
+    const getTypes = async () => {
+      let types = await getAllPlantTypes()
+      setPlantTypes(types)
+    }
+    getTypes()
+
     const prefillFormData = () => {
       const plantItem = plants.find((plantItem) => {
         return plantItem.id === Number(id)
       })
       setFormData({
-        ...plantItem 
+        ...plantItem
         // name: plantItem.name,
         // welcomeDate: plantItem.welcome_date,
         // lastWatered: plantItem.last_watered,
@@ -30,12 +38,20 @@ export default function EditPlant(props) {
     }
   }, [plants])
 
+  const handleSelectChange = (e) => {
+    console.log(e.target.value)
+    setFormData(prevState => ({
+      ...prevState, 
+      plant_type_id: e.target.value
+    }))
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value,
-     
+
     }))
   }
 
@@ -68,15 +84,28 @@ export default function EditPlant(props) {
           value={last_watered}
           onChange={handleChange}
         />
-         <label>Water Frequency:
+        <label>Water Frequency:
         <input
-          type='text'
-          name='water_frquencey'
-          value={water_frquencey}
-          onChange={handleChange}
-        />
+            type='text'
+            name='water_frquencey'
+            value={water_frquencey}
+            onChange={handleChange}
+          />
+        </label>
       </label>
-      </label>
+      {/* {plantItem?.plantType.map(plantType => (
+        <p key={plantType.id}>{plantType.name}</p>
+      ))} */}
+
+
+      <select defaultValue='default' onChange={handleSelectChange}>
+        <option disabled value='default'>-- Select a type --</option>
+        {plantTypes.map(plantType => (
+            <option value={plantType.id} key={plantType.id}>{plantType.name}</option>
+          ))}
+      </select>
+      <button>add</button>
+
       <button>Submit</button>
     </form>
   )
