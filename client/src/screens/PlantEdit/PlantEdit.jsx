@@ -4,11 +4,11 @@ import { useParams } from 'react-router-dom';
 export default function EditPlant(props) {
   const [formData, setFormData] = useState({
     name: '',
-    welcomeDate: '', 
-    lastWatered: '',
-    waterFreq: ''
+    welcome_date: '', 
+    last_watered: '',
+    water_frquencey: ''
   })
-  const { name, welcomeDate, lastWatered, waterFreq } = formData;
+  const { name, welcome_date, last_watered, water_frquencey } = formData;
   const { plants, handleUpdate } = props;
   const { id } = useParams();
 
@@ -18,10 +18,11 @@ export default function EditPlant(props) {
         return plantItem.id === Number(id)
       })
       setFormData({
-        name: plantItem.name,
-        welcomeDate: plantItem.welcome_date,
-        lastWatered: plantItem.last_watered,
-        waterFreq: plantItem.water_frquencey
+        ...plantItem 
+        // name: plantItem.name,
+        // welcomeDate: plantItem.welcome_date,
+        // lastWatered: plantItem.last_watered,
+        // waterFreq: plantItem.water_frquencey
       })
     }
     if (plants.length) {
@@ -34,9 +35,7 @@ export default function EditPlant(props) {
     setFormData(prevState => ({
       ...prevState,
       [name]: value,
-      [welcomeDate]: value,
-      [lastWatered]: value,
-      [waterFreq]: value,
+     
     }))
   }
 
@@ -57,23 +56,23 @@ export default function EditPlant(props) {
       <label>Welcome Date:
         <input
           type='text'
-          name='weclome date'
-          value={welcomeDate}
+          name='welcome_date'
+          value={welcome_date}
           onChange={handleChange}
         />
       </label>
       <label>Last Watered:
         <input
           type='text'
-          name='last watered'
-          value={lastWatered}
+          name='last_watered'
+          value={last_watered}
           onChange={handleChange}
         />
          <label>Water Frequency:
         <input
           type='text'
           name='water_frquencey'
-          value={waterFreq}
+          value={water_frquencey}
           onChange={handleChange}
         />
       </label>

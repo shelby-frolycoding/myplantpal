@@ -1,5 +1,5 @@
 class PlantsController < ApplicationController
-  before_action :set_plant, only: :show
+  before_action :set_plant, only: [:show, :update]
   before_action :authorize_request, only: [:create, :update, :destroy]
 
 
@@ -28,6 +28,7 @@ class PlantsController < ApplicationController
 
   
   def update
+    puts params
     if @plant.update(plant_params)
       render json: @plant
     else
