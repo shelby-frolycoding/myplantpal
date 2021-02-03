@@ -35,52 +35,54 @@ export default function PlantCreate(props) {
   }
 
   return (
+    <div className = "p-cont">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleCreate(formData)
     }}>
       <h3>Add A New Friend</h3>
-      <label>Name:
+      <label className = "p-label">Name:
         <input
           type='text'
           name='name'
           value={name}
           onChange={handleChange}
         />
-      </label>
-      <label>Welcome Date:
+      </label><br/>
+      <label className = "p-label">Welcome Date:
         <input
           type='text'
           name='welcome_date'
           value={welcome_date}
           onChange={handleChange}
         />
-      </label>
-      <label>Last Watered:
+      </label><br/>
+      <label className = "p-label">Last Watered:
         <input
           type='text'
           name='last_watered'
           value={last_watered}
           onChange={handleChange}
         />
-      </label>
-      <label>Water Frequency:
+      </label><br/>
+      <label className = "p-label">Water Frequency:
         <input
             type='text'
             name='water_frquencey'
             value={water_frquencey}
             onChange={handleChange}
           />
-        </label>
-        <select defaultValue='default' onChange={handleSelectChange}>
-        <option disabled value='default'>-- Select a type --</option>
+        </label><br/>
+        <select className= "p-select" defaultValue='default' onChange={handleSelectChange}>
+        <option className= "select" disabled value='default'>-- Select a type --</option>
         {plantTypes.map(plantType => (
             <option value={plantType.id} key={plantType.id}>{plantType.name}</option>
           ))}
       </select>
-      <button>add</button>
-
-      <button>Submit</button>
-    </form>
+      <button className = "log-butt">add</button>
+      <br/>
+      <button className = "log-butt">Submit</button>
+      </form>
+      </div>
   )
 }

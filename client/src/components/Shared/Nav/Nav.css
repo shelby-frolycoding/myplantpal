@@ -37,6 +37,7 @@ transform: scale(1.05);
 .welcome-msg {
   position: absolute;
   left: 43vw;
-  font-family: "Staatliches", cursive;
+  font-family: "Josefin Slab", serif;
+  /* font-family: "Staatliches", cursive; */
   color: rgb(249, 246, 246);
 }
