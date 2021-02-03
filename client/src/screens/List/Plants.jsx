@@ -8,13 +8,14 @@ import {
   faPlusCircle,
   faSeedling,
   faTint,
+  faHeart
 } from "@fortawesome/free-solid-svg-icons";
 export default function Plants(props) {
   const { plants, handleDelete, user } = props;
   console.log(plants)
   return (
     <div className="all-plants">
-      <h3 className= "header-plant">my plants</h3>
+      <h3 className= "header-plant"><FontAwesomeIcon className= "heart" icon={faHeart} />my plants</h3>
        <div className="plant-card">
       {plants.map(plant => (
         <React.Fragment key={plant.id}>

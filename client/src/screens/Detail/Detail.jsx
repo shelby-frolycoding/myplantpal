@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { addPlantType } from '../../services/plant-types';
 import { getOnePlant } from '../../services/plants';
+import "./Detail.css"
 
 export default function Detail(props) {
   const [plantItem, setPlantItem] = useState(null);
@@ -29,12 +30,12 @@ export default function Detail(props) {
   }
 
   return (
-    <div>
-      <h3>{plantItem?.name}</h3>
-      <h3>{plantItem?.last_watered}</h3>
-      <h3>{plantItem?.welcome_date}</h3>
-      <h3>{plantItem?.water_frquencey}</h3>
-      <h3>{plantItem?.plant_type.name}</h3>
+    <div className = "deets-all">
+      <h3 className= "name">{plantItem?.name}</h3>
+      <h3>welcome date: {plantItem?.welcome_date}</h3>
+      <h3>last watered: {plantItem?.last_watered}</h3>
+      <h3>watering frequency: {plantItem?.water_frquencey} days </h3>
+      <h3>type: {plantItem?.plant_type.name}</h3>
      
     </div>
   )

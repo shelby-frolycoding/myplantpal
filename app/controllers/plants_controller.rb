@@ -18,7 +18,7 @@ class PlantsController < ApplicationController
  
   def create
     @plant = Plant.new(plant_params)
-
+    @plant.user = @current_user
     if @plant.save
       render json: @plant, status: :created, location: @plant
     else
