@@ -23,3 +23,21 @@
   margin-top: -1vw;
   text-shadow: none;
   }
+
+  @media only screen and (max-width: 1024px) {
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .deets-all {
+      width: 100vw;
+      padding: 1vw;
+      font-size: 3vw;
+      height: 60vw;
+    }
+   
+    .name {
+      font-size: 6vw;
+    }
+   
+   
+  }

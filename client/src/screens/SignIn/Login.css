@@ -11,6 +11,9 @@ margin-left: 32vw;
 font-size: 2.5vw;
 font-family: "Staatliches", cursive;
 color: whitesmoke;
+background-image: url(https://live.staticflickr.com/65535/50903137113_19ed22a728_k.jpg); 
+background-repeat: repeat;
+  background-size: contain;
 }
 
 .log-deets {
@@ -31,6 +34,7 @@ background-color: rgba(233, 233, 233, 0.797);
 border: none;
 padding-top: .8vw;
 font-size: 1vw;
+
 }
 
 .log-butt {
