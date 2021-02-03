@@ -1,16 +1,14 @@
-PlantType.destroy_all
 Plant.destroy_all
+PlantType.destroy_all
 User.destroy_all
 
 @admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
 
 puts "#{User.count} users created"
 
-@boba = Plant.create!(name: 'boba', user: @admin)
-@djin = Plant.create!(name: 'djin', user: @admin)
-@yoda = Plant.create!(name: 'yoda', user: @admin)
 
-puts "#{Plant.count} plants created"
+
+
 
 @fern = PlantType.create!(name: 'fern')
 @cactus = PlantType.create!(name: 'cactus')
@@ -23,6 +21,12 @@ puts "#{Plant.count} plants created"
 
 
 puts "#{PlantType.count} plant types created"
+
+@boba = Plant.create!(name: 'boba', user: @admin, plant_type: @fern )
+@djin = Plant.create!(name: 'djin', user: @admin, plant_type: @cactus)
+@yoda = Plant.create!(name: 'yoda', user: @admin, plant_type: @succulent)
+
+puts "#{Plant.count} plants created"
 
 # @boba.plant_types.push(@succulent)
 # @djin.plant_types.push(@tropical)
