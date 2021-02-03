@@ -34,7 +34,7 @@ export default function Detail(props) {
       <h3>{plantItem?.last_watered}</h3>
       <h3>{plantItem?.welcome_date}</h3>
       <h3>{plantItem?.water_frquencey}</h3>
-      <h3>{plantItem?.plant_type_id}</h3>
+      <h3>{plantItem?.plant_type.name}</h3>
      
     </div>
   )

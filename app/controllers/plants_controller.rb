@@ -12,7 +12,7 @@ class PlantsController < ApplicationController
 
   
   def show
-    render json: @plant, include: :plant_types
+    render json: @plant, include: :plant_type
   end
 
  
