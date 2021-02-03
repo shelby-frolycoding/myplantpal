@@ -24,6 +24,6 @@ puts "#{Plant.count} plants created"
 
 puts "#{PlantType.count} plant types created"
 
-@boba.plant_types.push(@succulent)
-@djin.plant_types.push(@tropical)
-@yoda.plant_types.push(@cactus)
+# @boba.plant_types.push(@succulent)
+# @djin.plant_types.push(@tropical)
+# @yoda.plant_types.push(@cactus)

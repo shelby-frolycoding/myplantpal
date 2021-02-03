@@ -1,5 +1,5 @@
 class PlantsController < ApplicationController
-  before_action :set_plant, only: :show
+  before_action :set_plant, only: [:show, :update]
   before_action :authorize_request, only: [:create, :update, :destroy]
 
 
@@ -28,6 +28,7 @@ class PlantsController < ApplicationController
 
   
   def update
+    puts params
     if @plant.update(plant_params)
       render json: @plant
     else
@@ -50,6 +51,6 @@ class PlantsController < ApplicationController
 
    
     def plant_params
-      params.require(:plant).permit(:name, :user_id, :welcome_date, :last_watered, :last_fertilized, :water_frquencey, :feed_frequency)
+      params.require(:plant).permit(:name, :user_id, :welcome_date, :last_watered, :last_fertilized, :water_frquencey, :feed_frequency, :plant_type_id)
     end
 end

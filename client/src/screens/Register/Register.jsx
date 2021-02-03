@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./Register.css"
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -18,10 +19,12 @@ export default function Register(props) {
   }
 
   return (
+    <div className="log-cont">
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleRegister(formData);
     }}>
+       <div className="log-deets">
       <h3>Register</h3>
       <label>Username:
         <input
@@ -50,7 +53,9 @@ export default function Register(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+        <button className= "log-butt">Submit</button>
+        </div>
     </form>
+    </div>
   )
 }

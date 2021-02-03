@@ -4,14 +4,17 @@ export default function PlantCreate(props) {
   const [formData, setFormData] = useState({
     name: ''
   })
-  const { name } = formData;
+  const { name, welcomeDate, lastWatered, waterFreq } = formData;
   const {handleCreate} = props;
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, welcomeDate, lastWatered, waterFreq, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: value,
+      [welcomeDate]: value,
+      [lastWatered]: value,
+      [waterFreq]: value,
     }))
   }
 
@@ -29,6 +32,31 @@ export default function PlantCreate(props) {
           onChange={handleChange}
         />
       </label>
+      <label>Welcome Date:
+        <input
+          type='text'
+          name='weclome date'
+          value={welcomeDate}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Last Watered:
+        <input
+          type='text'
+          name='last watered'
+          value={lastWatered}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Water Frequency:
+        <input
+            type='text'
+            name='water_frquencey'
+            value={waterFreq}
+            onChange={handleChange}
+          />
+        </label>
+      
       <button>Submit</button>
     </form>
   )
