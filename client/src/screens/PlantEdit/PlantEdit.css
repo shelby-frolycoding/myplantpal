@@ -1,0 +1,29 @@
+.p-label {
+font-size: 2vw;
+
+}
+.p-cont{
+  background-color: #54a5a6af;
+  width: 40vw;
+  height: 30vw;
+  text-align: center;
+  margin-top: 5vw;
+  margin-left: 32vw;
+  font-size: 2.5vw;
+  font-family: "Staatliches", cursive;
+  color: whitesmoke;
+  background-image: url(https://live.staticflickr.com/65535/50903137113_19ed22a728_k.jpg); 
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.select {
+border: none;
+color: rgba(101, 101, 101, 0.728);
+}
+.p-select {
+background-color: rgba(245, 245, 245, 0.755);
+width: 10vw;
+border: none;
+
+}

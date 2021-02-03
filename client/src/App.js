@@ -90,15 +90,16 @@ function App() {
         <Route exact path='/'>
           <Landing  />
         </Route>
+        <Route exact path='/plants/new'>
+          <PlantCreate handleCreate={handleCreate} />
+        </Route>
         <Route exact path='/plants/:id/edit'>
           <PlantEdit plants={plants} handleUpdate={handleUpdate} />
         </Route>
-        <Route path='/plants/:id'>
+        <Route exact path='/plants/:id'>
           <Detail plants={plants} />
         </Route>
-        <Route path='/plants/new'>
-          <PlantCreate handleCreate={handleCreate} />
-        </Route>
+       
 
       </Switch>
     </Layout>

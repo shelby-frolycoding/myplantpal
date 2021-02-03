@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getAllPlantTypes } from '../../services/plant-types'
+import "./PlantEdit.css"
 
 export default function EditPlant(props) {
   const [plantTypes, setPlantTypes] = useState([])
@@ -56,57 +57,60 @@ export default function EditPlant(props) {
   }
 
   return (
+    <div className = "p-cont">
     <form onSubmit={(e) => {
       e.preventDefault();
       handleUpdate(id, formData);
     }}>
-      <h3>Edit Your Plant</h3>
-      <label>Name:
-        <input
+      <h3 className = "title">Edit Your Plant</h3>
+      <label className = "p-label">Plant Name:
+        <input 
           type='text'
           name='name'
           value={name}
           onChange={handleChange}
         />
-      </label>
-      <label>Welcome Date:
+      </label> <br/>
+      <label className = "p-label">Welcome Date:
         <input
           type='text'
           name='welcome_date'
           value={welcome_date}
           onChange={handleChange}
         />
-      </label>
-      <label>Last Watered:
+      </label><br/>
+      <label className = "p-label">Last Watered:
         <input
           type='text'
           name='last_watered'
           value={last_watered}
           onChange={handleChange}
-        />
-        <label>Water Frequency:
+          />
+          </label><br/>
+        <label className = "p-label">Water Frequency (In Days):
         <input
             type='text'
             name='water_frquencey'
             value={water_frquencey}
             onChange={handleChange}
           />
-        </label>
-      </label>
+        
+      </label><br/>
       {/* {plantItem?.plantType.map(plantType => (
         <p key={plantType.id}>{plantType.name}</p>
       ))} */}
 
 
-      <select defaultValue='default' onChange={handleSelectChange}>
-        <option disabled value='default'>-- Select a type --</option>
+      <select className= "p-select" defaultValue='default' onChange={handleSelectChange}>
+        <option className= "select" disabled value='default'>-- Select a type --</option>
         {plantTypes.map(plantType => (
             <option value={plantType.id} key={plantType.id}>{plantType.name}</option>
           ))}
       </select>
-      <button>add</button>
-
-      <button>Submit</button>
-    </form>
+      <button className= "log-butt">add</button>
+      <br/>
+      <button className= "log-butt">Submit</button>
+      </form>
+      </div>
   )
 }

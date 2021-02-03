@@ -12,13 +12,13 @@ class PlantsController < ApplicationController
 
   
   def show
-    render json: @plant, include: :plant_types
+    render json: @plant, include: :plant_type
   end
 
  
   def create
     @plant = Plant.new(plant_params)
-
+    @plant.user = @current_user
     if @plant.save
       render json: @plant, status: :created, location: @plant
     else

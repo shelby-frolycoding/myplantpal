@@ -1,10 +1,15 @@
 .all-plants {
   color: black;
   background-color: #54a5a6af;
-  width: 75vw;
-  height: 80vw;
+   background-image: url(https://live.staticflickr.com/65535/50903137113_19ed22a728_k.jpg); 
+  width: 60vw;
+  height: 100vw;
   margin: 0 auto;
   margin-top: 4.5vw;
+  background-repeat: repeat;
+  background-size: contain;
+ 
+  opacity: 80%;
   
 }
 .plant-name {
@@ -15,13 +20,16 @@ margin: 0 auto;
 padding-bottom: 3vw;
 padding-top: 2vw;
 }
-
+.heart {
+color: #FFA2A2;
+}
 .header-plant {
 margin: 0 auto;
-font-size: 2vw;
-color: dimgray;
+font-size: 3vw;
+color: rgb(74, 74, 74);
 font-family: "Josefin Slab", serif;
 padding-bottom: 2vw;
+padding-top: 1vw;
 }
 .plant-name, .plant-link {
 font-family: 'Permanent Marker', cursive;
@@ -42,7 +50,7 @@ font-size: 5vw;
 .add-butt {
 border: none;
 background-color: transparent;
-color: rgb(233, 196, 49);
+color: #FFA2A2;
 font-size: 5vw;
 
 }
@@ -52,7 +60,7 @@ margin-bottom: 3vw;
 border: none;
 background-color: transparent;
 font-size: 1.5vw;
-color: dimgray;
+color: #545454;
 
 }
 
@@ -64,4 +72,30 @@ cursor: pointer;
 transform: scale(1.01);
 cursor: pointer;
 opacity: 80%;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .all-plants {
+    width: 90vw;
+    padding: 1vw;
+    font-size: 3vw;
+    padding-bottom: 15vw;
+    
+  }
+ 
+  .add-butt {
+    font-size: 4vw;
+  }
+  .p-butt {
+    font-size: 2.5vw;
+  }
+ 
+  .plant-name {
+    width: 40%;
+    height: 20%;
+    font-size: 3.5vw;
+  }
 }
